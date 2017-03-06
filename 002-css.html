@@ -1,0 +1,163 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="002-css.css">
+	<title>HTML basics</title>
+</head>
+<body>
+<div id="content">
+		<header>
+			<div id="logo"><a href="https://www.baidu.com" target="_blank"><img src="002-logo.png" alt="002-bd_logo" width="124" height="40" ></a></div>
+			<nav>
+				<ul>
+					<li><a href="#article1">article 1</a></li>
+					<li><a href="#article2">article 2</a></li>
+					<li><a href="#gallery">gallery</a></li>
+					<li><a href="#article3">article 3</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article id="article1">
+			<h1>article 1</h1>
+			<h2>subtitle</h2>
+			<span class="article-info"><span>author</span>&nbsp;<time>2017/03/01</time></span>			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto assumenda modi quia recusandae beatae aperiam rem molestias, perspiciatis, quod pariatur doloremque? Pariatur, quibusdam incidunt. Corporis expedita quasi suscipit consectetur quia.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, hic.<strong><a href="http://ife.baidu.com">ife self</a></strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, qui.<strong><a href="http://ife.baidu.com" target="_blank">ife new window</a></strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, fuga.</p>
+		</article>
+		<article id="article2">
+			<h1>article 2</h1>
+			<h2>subtitle</h2>
+			<span class="article-info"><span>author</span>&nbsp;<time>2017/03/01</time></span>		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cum!</p>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fugit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, minima? </p>
+			<ul>
+				<li>item 01</li>
+				<li>item 02</li>
+				<li>item 03</li>
+			</ul>
+		</article>
+		<section id="gallery">
+			<h1>gallery</h1>
+			<div>
+				<img src="001-icon_canna.jpg" alt="001-icon_canna">
+				<p>01 icon_canna</p>
+			</div>
+			<div>
+				<img src="001-icon_canna.jpg" alt="001-icon_canna">
+				<p>02 icon_canna</p>
+			</div>
+			<div>
+				<img src="001-icon_canna.jpg" alt="001-icon_canna">
+				<p>03 icon_canna</p>
+			</div>
+		</section>
+		<article id="article3">
+			<h1>article 3</h1>
+			<h2>subtitle</h2>
+			<span class="article-info"><span>author</span>&nbsp;<time>2017/03/01</time></span>
+			<div>
+				<ol>
+					<li>rank 1</li>
+					<li>rank 2</li>
+					<li>rank 3</li>
+				</ol>
+					<table>
+						<th>th 1</th><th>th 2</th><th>th 3</th>
+						<tr>
+							<td>row 1</td>
+							<td>row 1</td>
+							<td>row 1</td>
+						</tr>
+						<tr>
+							<td>row 2</td>
+							<td>row 2</td>
+							<td>row 2</td>
+						</tr>
+						<tr>
+							<td>row 3</td>
+							<td>row 3</td>
+							<td>void <a href="#">link</a></td>
+						</tr>
+						<tr>
+							<td>row 4</td>
+							<td>row 4</td>
+							<td>void <a href="#">link</a></td>
+						</tr>
+						<tr>
+							<td>row 5</td>
+							<td>row 5</td>
+							<td>void <a href="#">link</a></td>
+						</tr>
+						<tr>
+							<td>sum</td>
+							<td colspan="2">1000</td>
+						</tr>
+					</table>
+				
+			</div>
+		</article>
+		<aside>
+			<h1>aside's title</h1>
+			<form action="">
+				<div class="row-group">
+					<div class="row">
+						<div class="cell">please input your email adress</div>
+						<div class="cell"><input type="email" placeholder="email" autofocus><div class="input-require">please follow the correct format</div></div>
+					</div>
+					<div class="row">
+						<div class="cell">please set your password</div>
+						<div class="cell"><input type="password"><div class="input-require">length between 6 and 16, english or number</div></div>
+					</div>
+					<div class="row">
+						<div class="cell">please check your password</div>
+						<div class="cell">
+							<input type="password"><div class="input-require">length between 6 and 16, english or number</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell">gender</div>
+						<div class="cell">
+							<input type="radio" name="gender" id="female" checked>
+							<label for="female">female</label>
+							<input type="radio" name="gender" id="male">
+							<label for="male">male</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell">city</div>
+						<div class="cell">
+							<select name="city" id="city">
+								<option value="01">beijing</option>
+								<option value="02">wuhan</option>
+								<option value="03">shanghai</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell">hobbies</div>
+						<div class="cell">
+							<input type="checkbox" name="hobbies" id="sports">
+							<label for="sports">sports</label>
+							<input type="checkbox" name="hobbies" id="art">
+							<label for="art">art</label>
+							<input type="checkbox" name="hobbies" id="science">
+							<label for="science">science</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell">self introduction</div>
+						<div class="cell">
+							<textarea name="self-intro" id="self-intro" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="caption">
+					<input id="submit" type="submit" value="submit">
+				</div>
+			</form>
+		</aside>
+</div>
+<footer>copyright&nbsp;2017&copy; amy1996smith@outlook.com</footer>
+</body>
+</html>
