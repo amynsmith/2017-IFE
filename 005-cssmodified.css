@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Georgia, "Times New Roman", 
+             "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", 
+             serif;
+
+    background-color: black;
+    min-width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#content{
+	background-color: #E6E4E4;
+	padding-right: 330px;
+	padding-bottom: 18px;
+	position: relative;
+	border-top: solid transparent;
+	border-bottom: solid transparent;
+}
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #433131;
+	border-bottom: solid transparent;
+}
+header #logo{
+	display: inline-block;
+	float: left;
+	height:100%;
+	padding-left: 30px;
+}
+header #logo a{
+	display: inline-block;
+	height: 100%;
+}
+header #logo a img{
+	height: 30px;
+	width:auto;
+}
+nav{
+	float: right;
+	width: 400px;
+	height: 100%;
+	line-height: 40px;
+}
+nav ul {
+	height: 100%;
+	list-style-type: none;
+}
+nav ul li{
+	float: left;/*而不是用inline，这样才能定宽*/
+	position: relative;/*便于对其中的em和i标签定位*/
+	width: 100px;
+	height: 100%;
+	text-align: center;
+}
+nav ul li a:link{
+	text-decoration: none;
+	color: white;
+}
+nav ul li a:visited{
+	color:#E2E2E2;
+}
+nav ul li a:hover,a:focus,a:active{
+	color:#F2CACA;
+}
+article,section,aside{
+	background-color: white;
+	margin: 18px 18px 0 18px;
+	padding: 18px 16px;
+	box-shadow: 2px 1px 2px grey;
+}
+article h1,section h1{
+	font-size: 2.5em;
+	margin-bottom: 0.2em;
+}
+article h2,section h2{
+	font-size: 1.5em;
+	margin-bottom: 0.1em;
+	color: #9D9D9D;
+}
+article span.article-info{
+	font-size: 1.2em;
+	margin-bottom: 0.1em;
+	color:#AAAAAA;
+}
+article p{
+	margin: 1.2em auto;
+	text-indent: 2em;
+}
+article a:link{
+	text-decoration: none;
+	color:#8C8CD7;
+}
+article a:visited{
+	color:#67A887;
+}
+article a:hover,a:focus,a:active{
+	color: #9DF7AC;
+}
+article ul,ol{
+	list-style-type: none;
+	text-indent: 2em;
+	margin: 10px 0;
+}
+section div{
+	display: inline-block;
+	margin: 10px;
+	padding-top:20px;
+	width: 260px;
+	height: 260px;
+	box-shadow: inset 0 0 3px grey;
+	text-align: center;
+}
+section div p{
+	position: relative;
+	top:-240px;
+}
+section div img{
+	width:200px;
+	height: auto;
+	margin-top: 30px;
+}
+article table{
+	background-color:#EAEAEA;
+	width: 100%;
+}
+article table th:nth-child(n-1){
+	width: 40%;
+}
+article table th,td{
+	background-color: white;
+	padding: 0.5em 0 0.5em 1em;
+	text-align: left;
+}
+article table th{
+	color: white;
+	background-color: black;
+	font-weight: normal;
+}
+article table tr:last-of-type td{
+	background-color: #EAEAEA;
+}
+aside{
+	width: 280px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+aside h1::before{
+	content: "|";
+	font-size:1.7em;
+	vertical-align: middle;
+	color: #EAEAEA;
+}
+aside form{
+	display: table;
+	width: 100%;
+	margin: 18px auto;
+}
+aside form input,textarea,select{
+	font-family: inherit;
+	font-size: 100%;
+}
+aside textarea{
+	resize: vertical;
+}
+aside form input[type!="radio|checkbox"]{
+	width: 200px;
+	box-sizing: content-box;
+}
+aside form div.input-require{
+	display: none;
+}
+aside form div input:focus+div.input-require{
+	display: block;
+	color:#CCCCCC;
+}
+aside form div.cell:first-child{
+	width: 40%;
+}
+aside form div.row-group{
+	display: table-row-group;
+}
+aside form div.caption{
+	display: table-caption;
+	caption-side: bottom;
+}
+aside form div.row{
+	display: table-row;
+}
+aside form div.cell{
+	display: table-cell;
+	height: 2em;
+	vertical-align: middle;
+}
+aside form div.cell:first-child{
+	text-align: right;
+	padding-right: 0.5em;
+}
+aside form div.row:last-of-type .cell:first-child{
+	vertical-align: top;
+}
+aside form textarea{
+	width: 95%;
+}
+aside form input#submit{
+	width: 100%;
+	height: 2em;
+	margin-top: 0.3em;
+	color:white;
+	background-color: #8F8FD7;
+	border-style: none;
+	border-radius: 0.3em;
+	box-shadow: 0 0 1px #8F8FD7;
+}
+footer{
+	height:50px;
+	color:white;
+	text-align: center;
+	padding-top: 20px;
+}
