@@ -1,0 +1,439 @@
+*,*:after,*:before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.pic, img{
+	box-sizing: content-box;
+}
+body{
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+	background-color: white;
+	font-family: Georgia, "Times New Roman", 
+         "Microsoft YaHei", "微软雅黑", 
+         STXihei, "华文细黑", 
+         serif;
+    font-size:62.5%;
+}
+header,footer,.content{
+	width: 892px;
+	margin: 0 auto;
+}
+header{
+	height: 61px;
+	border-bottom: 2px solid #938187;
+}
+header,footer{
+	font: 1.2em SimHei,"黑体",serif;
+}
+.intro .right h1{
+	font:2.4em/1.25em "Microsoft YaHei", "微软雅黑", serif;
+	font-variant-caps: small-caps;
+	width: 120px;
+	text-decoration: underline;
+}
+.intro .right span:first-of-type{
+	display: inline-block;
+	margin-top: 4px;
+	font: 1.2em KaiTi,"楷体",serif;
+	color: #676767;
+}
+.intro .right span:nth-of-type(2){
+	display: inline-block;
+	padding-top: 30px;
+	margin-left: -20px;
+	font:11.6em/1em "Microsoft YaHei", "微软雅黑", serif;
+	color: #75b86b;
+	font-style: oblique;
+	font-weight: bold;
+}
+.intro .right span:nth-of-type(3){
+	font:5.5em/1em "Microsoft YaHei", "微软雅黑", serif;
+	color: #cc8091;
+	padding-right: 5px;
+}
+.intro .right span:nth-of-type(4){
+	font:2.1em/1em "Microsoft YaHei", "微软雅黑", serif;
+	color: #cc8091;
+	position: relative;
+	top: -16px;
+	display: inline-block;
+	width: 30px;
+}
+.intro .right span:nth-of-type(5){
+	font:1.2em/1em "Microsoft YaHei", "微软雅黑", serif;
+	color: #cc8091;
+	position: relative;
+	left: -30px;
+}
+aside .pic{
+	font-family: "Microsoft YaHei", "微软雅黑", serif;
+}
+.intro h2{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.6em;
+	padding-bottom: 1em;
+}
+.intro div:nth-child(3) h2{
+	color:#418c59;
+}
+.intro div:nth-child(4) h2{
+	color: #d2994f;
+}
+.intro div:nth-child(5) h2{
+	color: #cc7680;
+}
+.intro div:nth-child(5) p:nth-child(n-3){
+	color:#231815;
+	-webkit-filter: opacity(70%);
+	filter: opacity(70%);
+}
+.intro div:nth-child(5) p:nth-child(n-3) span{
+	font-family: "Microsoft YaHei", "微软雅黑", serif;
+	font-style: italic;
+	color: #cd4a48;
+	-webkit-filter: opacity(70%);
+	filter: opacity(70%);
+}
+p{
+	font:1.2em/1.33em SimSun,"宋体",serif;
+	color:#767777;
+}
+.intro .pic::before, .intro .pic::after{
+	content: "";
+	display: inline-block;
+	width: 191px;
+	height: 100%;
+}
+.intro .pic::before{
+	background-color: #72b16a;
+	-webkit-filter: opacity(50%);
+	filter: opacity(50%);
+}
+.intro .pic::after{
+	background-color: #cd4a48;
+	-webkit-filter: opacity(50%);
+	filter: opacity(50%);
+	float: right;
+}
+.techinfo article h1{
+	font:4.2em SimHei,"黑体",serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #11456b;
+	line-height: 42px;
+}
+.techinfo article h1>span{
+	font-size: 1.71em;
+	color: #f5e327;
+	font-style: italic;
+	font-weight: bold;
+}
+.techinfo article h2{
+	font:3.3em SimHei,"黑体",serif;
+	font-weight: bold;
+	color:#11456b;
+	border-bottom: solid;
+	border-width: 2px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-bottom: 25px;
+	line-height: 33px;
+}
+.techinfo article p{
+	text-align: justify;
+}
+.techinfo li{
+	font:1.6em/1em SimSun,"宋体",serif;
+	color: #5a5b5b;
+}
+.slogan{
+	font:1em SimHei,"黑体",serif;
+}
+.number{
+	padding-left: 78px;
+	position: relative;
+}
+.number div{
+	height: 86px;
+	position: absolute;
+	top: 50%;
+	margin-top: -43px;
+	padding-left: 8px;
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	border-color: transparent transparent transparent #fff;
+}
+.number div::before{
+	content:"0";
+	display: inline-block;
+	font-size: 11em;
+	line-height: 1em;	
+	position: absolute;
+	left: -65px;
+	top: -12px;
+}
+.number span:nth-of-type(1), .number span:nth-of-type(2){
+	font-size: 2.1em;
+	font-style: italic;
+	line-height: 1.14em;
+	display: block;
+}
+.number span:nth-of-type(3){
+	font-size: 1.2em;
+	padding-bottom: 0.5em;
+}
+.quote{
+	font-size: 1.4em;
+	line-height: 1.14em;
+	font-style: italic;
+	height: 160px;
+	padding-top: 8px;
+	padding-bottom: 40px;
+	position: relative;
+}
+.quote::before{
+	content: "“";
+	display: inline-block;
+
+	font-size: 5.14em;
+	font-style: normal;
+	width: 26px;
+	height: 22px;
+	color: #d45d5c;
+	
+	float: left;
+	position: relative;
+	margin-top: -14px;
+	left: -40px;
+	top: 30px;
+	margin-right: 15px;
+}
+.quote::after{
+	content:"”";
+	display: inline-block;
+	font-size: 5.14em;
+	font-style: normal;
+	width: 26px;
+	height: 22px;
+	color: #d45d5c;
+
+	position: relative;
+	float: right;
+	/*left: -26px;*/
+	top: 30px;
+}
+.techinfo li span{
+	font-size: 0.75em;
+	float: right;
+	font-style: italic;
+	line-height: 1em;
+	position: relative;
+	top: 4px;
+}
+.techinfo article p{
+	text-indent: 2em;
+}
+.techinfo article p:first-of-type{
+	text-indent:0;
+}
+.techinfo article p:nth-of-type(2){
+ 	text-indent:0;
+}
+.techinfo article p:first-of-type::before{
+	content:"前";
+	display: inline-block;
+	font: 5.833em "Microsoft YaHei", "微软雅黑", serif;
+	color: #f5e327;
+	float: left;
+	line-height: 70px;
+	width: 77px;
+	height: 77px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a:visited{
+	color:#D8D8D8;
+}
+a:hover,a:focus,a:active{
+	color:#B6AADD;
+}
+.home{
+	display: inline-block;
+	position: relative;
+}
+header .home{
+	width: 110px;
+	height: 100%;
+	color: #fff;
+	background-color: #d45d5c;
+}
+header .home a{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+header .date{
+	vertical-align: text-bottom;
+	width: 782px;
+	text-align: right;
+}
+header .date, footer a{
+	display: inline-block;
+	color:#d45d5c;
+}
+.intro{
+	margin-top: 35px;
+	position: relative;
+}
+.intro .pic{
+	background:url(006-左上大图.png);
+	width:641px;
+	height:301px;
+	margin-right: 47px;
+	margin-bottom: 42px;
+}
+.intro .right{
+	width: 203px;
+	height: 301px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border:#cc8091 solid;
+	border-width: 2px 0 0 0;
+	padding-top: 12px;
+}
+
+.intro .mid{
+	display: inline-block;
+	height: 166px;
+}
+.intro .mid:nth-last-child(3){
+	width: 227px;
+	margin-right: 27px;
+}
+.intro .mid:nth-last-child(2){
+	width: 204px;
+	margin-right: 29px;
+}
+.intro .mid:nth-last-child(1){
+	width: 130px;
+}
+.techinfo article, aside{
+	display: inline-block;
+	vertical-align: top;
+	height: 605px;
+}
+.techinfo article{
+	width: 415px;
+	margin-right: 19px;
+}
+.techinfo nav{
+	box-sizing: border-box;
+	width: 458px;
+	height: 318px;
+	padding-top: 32px;
+	padding-right: 21px;
+	background: #EEEDD6;
+}
+.techinfo ul{
+	height: 125px;
+	list-style-type: none;
+}
+.techinfo li{
+	margin-bottom: 20px;
+}
+.techinfo li:before{
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 8.66px;
+	margin-left: 32px;
+	margin-right: 8px;
+	border-width: 8.66px 5px;
+	border-style: solid;
+	border-color:transparent transparent #000 transparent;
+}
+
+.slogan{
+	height: 160px;
+}
+.number{
+	width: 260px;
+	height: 100%;
+	color: #fff;
+	background: #d45d5c;
+	display: inline-block;
+	vertical-align: top;
+}
+.quote{
+	padding-left: 16px;
+	width: 177px;
+	height: 100%;
+	display: inline-block;
+}
+.techinfo article .pic{
+	background: url(006-配图三.png);
+	width: 167px;
+	height: 288px;
+	border-width: 20px 0 20px 20px;
+	border-style: solid;
+	border-color: transparent;
+	background-repeat: no-repeat;
+	float: right;
+	display: inline-block;
+}
+.techinfo aside .pic{
+	background: url(006-配图二.png);
+	width: 458px;
+	height: 257px;
+	background-repeat: no-repeat;
+	margin:0 0 30px 0;
+}
+.techinfo aside .pic div{
+	background:rgba(0,0,0,.3);
+	display: inline-block;
+	height: 61px;
+	width: 100%;
+	margin-top: 196px;
+	color: #72b16a;
+}
+.techinfo aside .pic span:first-child{
+	display: inline-block;
+	height: 44px;line-height: 44px;
+	padding-left: 10px;
+	margin: 8.5px 10px auto 50px;
+	font-size: 2.6em;
+	color: #fff;
+	border-style: solid;
+	border-color: #72b16a;
+	border-width: 0 0 0 3px;
+}
+.techinfo aside .pic span:last-child{
+	font-size: 1.2em;
+	color: inherit;
+	font-style: italic;
+	letter-spacing: .4em;
+}
+footer{
+	margin-top: 40px;
+	height: 58px;
+}
+footer .home{
+	width: 100%;
+	text-align: right;
+	border-bottom: 1px solid #938187;
+}
+footer .home a{
+	position: absolute;
+	right: 0;
+	bottom: -1.2em;
+}
