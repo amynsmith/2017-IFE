@@ -2,6 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	width: 100%;
+	min-width: 1280px;
+}
 body{
 	width: 100%;
 	min-width: 1280px;
@@ -105,8 +109,9 @@ header .active::after{
 	font-family: "Microsoft YaHei", "微软雅黑", serif;
 	color:#fff;
 	background: url(007-imgs/row1.jpg);
-	width: 1280px;
-	height: 690px;
+	background-size: cover;
+	min-width: 1280px;
+	min-height: 690px;
 	margin: 0 auto;
 }
 .row1::before{
@@ -141,13 +146,13 @@ header .active::after{
 	text-align: center;
 }
 .row2{
-	width: 1280px;
+	width: 100%;
 	height: 250px;
 	margin: 0 auto;
 	position: relative;
 }
 .row2>div{
-	width: 318.5px;
+	width: 25%;
 	display: inline-block;
 	text-align: center;
 	vertical-align: text-top;
@@ -197,7 +202,7 @@ header .active::after{
 	text-align: center;
 	background-color: #EDECEC;
 	height: 359px;
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	font-family: SimHei,"黑体",serif;
@@ -219,7 +224,8 @@ header .active::after{
 }
 .row4{
 	background: url(007-imgs/row4.jpg);
-	width: 1280px;
+	width: 100%;
+	background-size: cover;
 	height: 341px;
 	margin: 0 auto;
 	position: relative;
@@ -314,7 +320,7 @@ header .active::after{
 
 .row5{
 	box-sizing: border-box;
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	height: 605px;
 	background-color: #F7F7F7;
@@ -374,16 +380,17 @@ header .active::after{
 	color: #BDBDBD;
 }
 .row6, .row7, .row8{
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
 .row6{
-	height: 567px;
+	min-height: 567px;
 }
 .row7{
-	height: 521px;
-}
+	min-height: 521px;
+/*	height: 691px;
+*/}
 .row6 span:nth-of-type(1){
 	font-size: 3.1em;
 }
@@ -427,8 +434,10 @@ header .active::after{
 	color: #fff;
 	background: url(007-imgs/row6.jpg);
 	background-repeat: no-repeat;
-	width: 850px;
-	height: 567px;
+	min-height: 567px;
+	width: 66%;
+	height: 100%;
+	background-size: cover;
 }
 .row6 .left span{
 	display: block;
@@ -446,6 +455,7 @@ header .active::after{
 .row6 .left, .row7 .left{
 	position: relative;
 }
+
 .row6 .left::after, .row7 .left::after{
 	content: "";
 	display: inline-block;
@@ -467,10 +477,16 @@ header .active::after{
 	border-color: transparent transparent transparent #fff;
 	z-index: 10;
 }
-
+.row6::after, .row7::after{
+	display: block;
+	content: ".";
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
 .row6 .right{
-	width: 430px;
-	height: 567px;
+	min-height: 567px;
+	width: 34%;
 }
 .row6 .right>div{
 	width: 286px;
@@ -492,17 +508,29 @@ header .active::after{
 	display: block;
 	margin-top: 25px;
 }
-.row7 .left{
-	width:850px;
-	height: 521px;
-}
-.row7 .left div{
-	width: 50%;
+.row7 .right{
+	background: url(007-imgs/row7.jpg);
+	background-repeat: no-repeat;
+	min-width: 430px;
+	min-height: 521px;
+	width: 34%;
 	height: 100%;
+	background-size: cover;
+}
+.row7 .right::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-color:#010101;
+	filter: opacity(0.4);
 }
 .row7 .left{
 	font-family: SimHei,"黑体",serif;
 	font-size: 1.3125em;
+	min-height: 521px;
+	width: 33.0%;
+	height: 100%;
 }
 .row7 .left span{
 	line-height: 1.45em;
@@ -513,53 +541,41 @@ header .active::after{
 	width: 170px;
 	height: 43px;
 	color: #E74F4D;
-	margin: 25px auto;
+	margin: 25px auto auto auto;
 	padding: 10px 40px;
 	border: 1px solid #E74F4D;
 }
-.row7 .left div:first-child a{
+.row7 .left:first-child{
+	color: #fff;
+	background-color: #E74F4D;                            
+}
+.row7 .left:first-child a{
 	color: #fff;
 	border-color: #fff;
 }
-.row7 .left div>span:first-child{
+.row7 .left span:first-child{
 	display: block;
 	margin-top: 170px;
-}
-.row7 .left div:first-child{
-	color: #fff;
-	background-color: #E74F4D;
 }
 .row7 .left .line, .row8 .line{
 	display: block;
 	background-color: #fff;
 	width: 31px;
-	height: 2px;
+	height: 2px;               
 	margin: 25px auto;
+}
+.row7{
+	height: 521px;
 }
 .row8 .line{
 	background-color: #E74F4D;
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
-.row7 .left div:last-child .line{
+.row7 .left:nth-of-type(2) .line{
 	background-color: #000;
 }
-.row7 .right{
-	background: url(007-imgs/row7.jpg);
-	width: 430px;
-	height: 521px;
-}
-.row7 .right::before{
-	content: "";
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-	background-color:#010101;
-	filter: opacity(0.4);
-}
-.row8{
-	height: 200px;
-}
+
 .row8 h2{
 	font-family: SimHei,"黑体",serif;
 	font-size: 1.3125em;
